@@ -1,0 +1,37 @@
+notes 1
+malicious activity is detected using two methods
+
+Signature Based detection (SIDS)
+anamoly based detection (AIDS)
+
+SIDS use standard dataset of intrusion detection to identify malicious activities in the net-
+work. Standard dataset consist of signatures, which define the pattern of attack. Packet
+entering in the system is analyzed using this dataset. If the pattern is matched then it is
+consider as malicious activity and alarm is generated for administrator. Otherwise, the
+packet is considered as normal and passed in the network. Limitation of SIDS is uniden-
+tified attack cannot be handled by this system. If old or outdated dataset is use it does
+not contain signature of unidentified attacks. This leads to degrade in performance of
+SIDS. AIDS method use behavior based analyses to detect malicious activities. Normal
+behavior of all type of traffic is stored in the form of rule. These rules are use as pattern
+to analyze and detect packet entering in the network [1]. Each packet behavior is match
+with the rules, if match is found it is consider as normal behavior. Otherwise, any devia-
+tion in rule is considered as malicious activity. Limitation of ADIS is this method gener-
+ates more false alarms. Slight deviation in the rule is considered as malicious behavior.
+In most of the network it is difficult to find the normal behavior of packets. In current
+internet scenario there is a need of IDS, which can offer collaborative, distributed, cross-
+platform and various protection services. This will help in improving network security
+and all new attacks can be identified 
+
+In this paper, a blockchain based framework is proposed, to exchange signatures of
+new attacks in the distributed network. Proposed work use signature as well as anomaly
+attack detection methods in a hybrid approach. Packet entering in the system is analyzed
+by signature detection. If any malicious activity is detected then packet is discarded,otherwise it is passed to the anomaly detection. Anomaly detection method analyze
+packet and check for normal activities. If packet is normal then it is passed in network
+otherwise packet is handed over to blockchain framework. This framework is respon-
+sible for signature creation and distribution in the network. Blockchain provides secu-
+rity to the signatures while exchange in between nodes of distributed network. Intruders
+cannot tamper signatures are it is replicated on number of nodes in network. Newly cre-
+ated signature is used by all nodes to update dataset. Updated dataset helps in improv-
+ing performance of signature detection. The proposed framework is the first IDS which
+makes use of blockchain for signature exchange. Features of this architecture are it’s
+fully distributed and fault tolerant.

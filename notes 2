@@ -1,0 +1,51 @@
+notes 2
+Proposed architecture uses both types of detection meth-
+ods as signature-based as well as anomaly based for attack detection and improving the
+security of network. Blockchain is used for signature transfer and it would be of its first
+kind to be used in distributed IDS as per our knowledge. This model is proposed for
+a distributed environment where each node is connected to the other in a distributed
+fashion. Each node will be able to detect attacks by analyzing packets entering through
+the network. 
+
+In this phase, all classifiers are
+trained using the modern CIC-IDS 2017 dataset. Classifiers which are used in this phase
+are artificial neural network (ANN), Isolation Random Forest (IRF), and XG boost. 
+
+ * Check other Classifiers that could be used 
+
+ talk in this paper the way the classification could be used for ADS and then explain in the system paper how to incorporate it to the network 
+
+ # Classifiers are ANN
+# Isolation Random Forest
+# XG Boost
+# These all classifiers will ensemble together to get the final prediction of the analysis using
+# majority voting algorithm
+# Network Intrustion Detection (NIDS)
+# Host-based intrustion Detection (HIDS)
+
+# Hybrid Intrusion detection system 
+# made up of two or more IDS techniques, i.e. NIDS and HIDS
+# done to increase efficiency, as it allows detecting both known and unknown attacks
+# a complete view of the network is created by combining host agents or system data 
+# with network information, this system is more effective in comparison to other IDS
+
+# For anamoly Detection 
+
+Genetic algorithm is used to find the normal behaivor patterns for all normal activities
+# CIC-IDS is used as the input 
+- rule based classifiers are used to train the classifiers
+- if packet of data matches with at least one of the rules then it is considered as normal
+
+- Fitness is calculated for each feature set and the feautre having strong fitness values will be considered for the rule based dataset generation 
+- this dataset is then used to train classifiers 
+# Threshold considered for the fitness value is 0.90 
+All chromosomes with a value nearer to the threshold are
+considered for dataset generation. Classifiers used are ANN, IRF, and XG-boost.
+
+
+Fitness value = (a/A) - (b/B)
+A is total number of attacks
+a - number of attack connections correctly classified by individual classifier
+
+B - Normal connections in the population
+b - number of normal connections correctly classified by classifiers
