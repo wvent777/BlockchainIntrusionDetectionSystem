@@ -29,14 +29,14 @@ are artificial neural network (ANN), Isolation Random Forest (IRF), and XG boost
 # a complete view of the network is created by combining host agents or system data 
 # with network information, this system is more effective in comparison to other IDS
 
-# For anamoly Detection 
+# For anomaly Detection
 
-Genetic algorithm is used to find the normal behaivor patterns for all normal activities
+Genetic algorithm is used to find the normal behavior patterns for all normal activities
 # CIC-IDS is used as the input 
 - rule based classifiers are used to train the classifiers
 - if packet of data matches with at least one of the rules then it is considered as normal
 
-- Fitness is calculated for each feature set and the feautre having strong fitness values will be considered for the rule based dataset generation 
+- Fitness is calculated for each feature set and the feature having strong fitness values will be considered for the rule based dataset generation
 - this dataset is then used to train classifiers 
 # Threshold considered for the fitness value is 0.90 
 All chromosomes with a value nearer to the threshold are

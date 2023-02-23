@@ -19,9 +19,7 @@ X_train = (pd.read_csv('ids_data_py/X_train_hpo.csv')).to_numpy()
 y_train = pd.read_csv('ids_data_py/y_train_hpo.csv')
 labels = list(y_train.to_numpy().flat)
 
-#Particle Swarm Optimization for Random Forest
-
-# Random Forest Classifier
+#Particle Swarm Optimization
 search_space = {'n_estimators': [10, 100],
                 'max_depth': [5, 50],
                 'eta': [0.01, 0.9]}

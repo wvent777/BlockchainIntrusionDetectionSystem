@@ -10,9 +10,8 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 from sklearn.metrics import precision_recall_fscore_support, f1_score, roc_auc_score
 import xgboost as xgb
 from xgboost import plot_importance
-import random_forest_hpo as rb_hpo
+import random_forest_hpo as rf_hpo
 import xgboost_hpo as xgb_hpo
-
 
 # Dummy Data Test
 from sklearn.datasets import make_classification
@@ -145,7 +144,7 @@ class IntrusionDS():
         print(rf_config)
 
         # XGBoost
-        xgb_config, xgb_acc = hpo.get_config()
+        xgb_config, xgb_acc = xgb_hpo.get_config()
         print("XGBoost")
         print("Accuracy: {}".format(xgb_acc))
         print(xgb_config)
